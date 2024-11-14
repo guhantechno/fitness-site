@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Online Gym</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="back-to-home">
+        <a href="index.html" class="back-btn">Back to Home</a> <!-- Change "index.html" to your homepage URL -->
+    </div>
+    <div class="container">
+        <h1 class="title">Welcome to GymFit!</h1>
+        <p class="subtitle">Start your fitness journey today. Sign up to access personalized workout plans, on-demand classes, and more!</p>
+
+        <!-- Sign Up Form -->
+        <form class="signup-form">
+            <h2>Create Your Account</h2>
+
+            <div class="social-signup">
+                <button class="social-btn google">Sign up with Google</button>
+                <button class="social-btn facebook">Sign up with Facebook</button>
+                <button class="social-btn apple">Sign up with Apple</button>
+            </div>
+
+            <div class="or-separator">
+                <span>Silver 1500</span>
+            </div>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="First & Last Name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required>
+
+            <h3>Tell Us About Your Fitness Goals</h3>
+            <label for="goal">What’s your main fitness goal?</label>
+            <select id="goal" name="goal" required>
+                <option value="weight-loss">Weight Loss</option>
+                <option value="strength">Strength Training</option>
+                <option value="flexibility">Flexibility & Mobility</option>
+                <option value="general-fitness">General Fitness</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="level">What’s your fitness level?</label>
+            <select id="level" name="level" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Your age" required>
+
+            <label for="height">Height</label>
+            <input type="number" id="height" name="height" placeholder="Your height (cm)" required>
+
+            <label for="weight">Weight</label>
+            <input type="number" id="weight" name="weight" placeholder="Your weight (kg)" required>
+
+            <label for="medical">Any medical considerations?</label>
+            <textarea id="medical" name="medical" placeholder="If yes, please mention here (optional)"></textarea>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="email-updates" name="email-updates">
+                <label for="email-updates">Yes, send me fitness tips & updates via email.</label>
+            </div>
+
+            <div class="terms-container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+
+        <div class="login-link">
+            <p>Already have an account? <a href="/login.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>
